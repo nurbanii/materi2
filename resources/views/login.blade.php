@@ -41,7 +41,7 @@
 				<a href="#"><span class="icon-user"></span> My Account</a> 
 				<a href="{{ url ("/register") }}"><span class="icon-edit"></span> Free Register </a> 
 				<a href="{{ url ("/contact") }}"><span class="icon-envelope"></span> Contact us</a>
-				<a href="cart.html"><span class="icon-shopping-cart"></span> 2 Item(s) - <span class="badge badge-warning"> $448.42</span></a>
+				<a href="{{ url ("/cart") }}"><span class="icon-shopping-cart"></span> 2 Item(s) - <span class="badge badge-warning"> $448.42</span></a>
 			</div>
 		</div>
 	</div>
