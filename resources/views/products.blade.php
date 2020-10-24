@@ -37,11 +37,11 @@
 					<a href="#"><span class="icon-youtube"></span></a>
 					<a href="#"><span class="icon-tumblr"></span></a>
 				</div>
-				<a class="active" href="index.html"> <span class="icon-home"></span> Home</a> 
+				<a class="active" href="{{ url ("/index") }}"> <span class="icon-home"></span> Home</a> 
 				<a href="#"><span class="icon-user"></span> My Account</a> 
-				<a href="register.html"><span class="icon-edit"></span> Free Register </a> 
-				<a href="contact.html"><span class="icon-envelope"></span> Contact us</a>
-				<a href="cart.html"><span class="icon-shopping-cart"></span> 2 Item(s) - <span class="badge badge-warning"> $448.42</span></a>
+				<a href="{{ url ("/register") }}"><span class="icon-edit"></span> Free Register </a> 
+				<a href="{{ url ("/contact") }}"><span class="icon-envelope"></span> Contact us</a>
+				<a href="{{ url ("/cart") }}"><span class="icon-shopping-cart"></span> 2 Item(s) - <span class="badge badge-warning"> $448.42</span></a>
 			</div>
 		</div>
 	</div>
@@ -92,12 +92,10 @@ Navigation Bar Section
 		  </a>
 		  <div class="nav-collapse">
 			<ul class="nav">
-			  <li class="active"><a href="index.html">Home	</a></li>
-			  <li class=""><a href="list-view.html">List View</a></li>
-			  <li class=""><a href="grid-view.html">Grid View</a></li>
-			  <li class=""><a href="three-col.html">Three Column</a></li>
-			  <li class=""><a href="four-col.html">Four Column</a></li>
-			  <li class=""><a href="general.html">General Content</a></li>
+			  <li class="active"><a href="{{ url ("/index") }}">>Home </a></li>
+			  <li class="active"><a href="{{ url ("/products") }}">>Products </a></li>
+			  <li class="active"><a href="{{ url ("/productdetails") }}">>Product Details </a></li>
+			  <li class="active"><a href="{{ url ("/register") }}">>Register </a></li>
 			</ul>
 			<form action="#" class="navbar-search pull-left">
 			  <input type="text" placeholder="Search" class="search-query span2">
@@ -134,18 +132,18 @@ Body Section
 <div id="sidebar" class="span3">
 <div class="well well-small">
 	<ul class="nav nav-list">
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Fashion</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Watches</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Fine Jewelry</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Fashion Jewelry</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Engagement & Wedding</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Men's Jewelry</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Vintage & Antique</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Loose Diamonds </a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Loose Beads</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>See All Jewelry & Watches</a></li>
+		<li><a href="{{ url ("/products") }}"><span class="icon-chevron-right"></span>Fashion</a></li>
+		<li><a href="{{ url ("/products") }}"><span class="icon-chevron-right"></span>Watches</a></li>
+		<li><a href="{{ url ("/products") }}"><span class="icon-chevron-right"></span>Fine Jewelry</a></li>
+		<li><a href="{{ url ("/products") }}"><span class="icon-chevron-right"></span>Fashion Jewelry</a></li>
+		<li><a href="{{ url ("/products") }}"><span class="icon-chevron-right"></span>Engagement & Wedding</a></li>
+		<li><a href="{{ url ("/products") }}"><span class="icon-chevron-right"></span>Men's Jewelry</a></li>
+		<li><a href="{{ url ("/products") }}"><span class="icon-chevron-right"></span>Vintage & Antique</a></li>
+		<li><a href="{{ url ("/products") }}"><span class="icon-chevron-right"></span>Loose Diamonds </a></li>
+		<li><a href="{{ url ("/products") }}"><span class="icon-chevron-right"></span>Loose Beads</a></li>
+		<li><a href="{{ url ("/products") }}"><span class="icon-chevron-right"></span>See All Jewelry & Watches</a></li>
 		<li style="border:0"> &nbsp;</li>
-		<li> <a class="totalInCart" href="cart.html"><strong>Total Amount  <span class="badge badge-warning pull-right" style="line-height:18px;">$448.42</span></strong></a></li>
+		<li> <a class="totalInCart" href="{{ url ("/cart") }}"><strong>Total Amount  <span class="badge badge-warning pull-right" style="line-height:18px;">$448.42</span></strong></a></li>
 	</ul>
 </div>
 
@@ -163,30 +161,30 @@ Body Section
 			<ul class="nav nav-list promowrapper">
 			<li>
 			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
 				<img src="assets/img/bootstrap-ecommerce-templates.png" alt="bootstrap ecommerce templates">
 				<div class="caption">
-				  <h4><a class="defaultBtn" href="product_details.html">VIEW</a> <span class="pull-right">$22.00</span></h4>
+				  <h4><a class="defaultBtn" href="{{ url ("/productdetails") }}">VIEW</a> <span class="pull-right">$22.00</span></h4>
 				</div>
 			  </div>
 			</li>
 			<li style="border:0"> &nbsp;</li>
 			<li>
 			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
 				<img src="assets/img/shopping-cart-template.png" alt="shopping cart template">
 				<div class="caption">
-				  <h4><a class="defaultBtn" href="product_details.html">VIEW</a> <span class="pull-right">$22.00</span></h4>
+				  <h4><a class="defaultBtn" href="{{ url ("/productdetails") }}">VIEW</a> <span class="pull-right">$22.00</span></h4>
 				</div>
 			  </div>
 			</li>
 			<li style="border:0"> &nbsp;</li>
 			<li>
 			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
 				<img src="assets/img/bootstrap-template.png" alt="bootstrap template">
 				<div class="caption">
-				  <h4><a class="defaultBtn" href="product_details.html">VIEW</a> <span class="pull-right">$22.00</span></h4>
+				  <h4><a class="defaultBtn" href="{{ url ("/productdetails") }}">VIEW</a> <span class="pull-right">$22.00</span></h4>
 				</div>
 			  </div>
 			</li>
@@ -243,29 +241,29 @@ New Products
 			  <ul class="thumbnails">
 				<li class="span3">
 				<div class="thumbnail">
-					<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+					<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
 					<a href="#" class="tag"></a>
-					<a href="product_details.html"><img src="assets/img/bootstrap-ring.png" alt="bootstrap-ring"></a>
+					<a href="{{ url ("/productdetails") }}"><img src="assets/img/bootstrap-ring.png" alt="bootstrap-ring"></a>
 				</div>
 				</li>
 				<li class="span3">
 				  <div class="thumbnail">
-					<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+					<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
 					<a href="#" class="tag"></a>
-					<a  href="product_details.html"><img src="assets/img/i.jpg" alt=""></a>
+					<a  href="{{ url ("/productdetails") }}"><img src="assets/img/i.jpg" alt=""></a>
 				  </div>
 				</li>
 				<li class="span3">
 				  <div class="thumbnail">
-					<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+					<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
 					<a href="#" class="tag"></a>
-					<a  href="product_details.html"><img src="assets/img/g.jpg" alt=""></a>
+					<a  href="{{ url ("/productdetails") }}"><img src="assets/img/g.jpg" alt=""></a>
 				  </div>
 				</li>
 				<li class="span3">
 				  <div class="thumbnail">
-					<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a  href="product_details.html"><img src="assets/img/s.png" alt=""></a>
+					<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+					<a  href="{{ url ("/productdetails") }}"><img src="assets/img/s.png" alt=""></a>
 				  </div>
 				</li>
 			  </ul>
@@ -274,26 +272,26 @@ New Products
 		  <ul class="thumbnails">
 			<li class="span3">
 			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details.html"><img src="assets/img/i.jpg" alt=""></a>
+				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a  href="{{ url ("/productdetails") }}"><img src="assets/img/i.jpg" alt=""></a>
 			  </div>
 			</li>
 			<li class="span3">
 			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
 				<a  href="product_details.html"><img src="assets/img/f.jpg" alt=""></a>
 			  </div>
 			</li>
 			<li class="span3">
 			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details.html"><img src="assets/img/h.jpg" alt=""></a>
+				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a  href="{{ url ("/productdetails") }}"><img src="assets/img/h.jpg" alt=""></a>
 			  </div>
 			</li>
 			<li class="span3">
 			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details.html"><img src="assets/img/j.jpg" alt=""></a>
+				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a  href="{{ url ("/productdetails") }}"><img src="assets/img/j.jpg" alt=""></a>
 			  </div>
 			</li>
 		  </ul>
@@ -308,8 +306,8 @@ New Products
 			<li class="span4">
 			  <div class="thumbnail">
 				 
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a href="product_details.html"><img src="assets/img/b.jpg" alt=""></a>
+				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a href="{{ url ("/productdetails") }}"><img src="assets/img/b.jpg" alt=""></a>
 				<div class="caption cntr">
 					<p>Manicure & Pedicure</p>
 					<p><strong> $22.00</strong></p>
@@ -324,8 +322,8 @@ New Products
 			</li>
 			<li class="span4">
 			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a href="product_details.html"><img src="assets/img/c.jpg" alt=""></a>
+				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a href="{{ url ("/productdetails") }}"><img src="assets/img/c.jpg" alt=""></a>
 				<div class="caption cntr">
 					<p>Manicure & Pedicure</p>
 					<p><strong> $22.00</strong></p>
@@ -340,8 +338,8 @@ New Products
 			</li>
 			<li class="span4">
 			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a href="product_details.html"><img src="assets/img/a.jpg" alt=""></a>
+				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a href="{{ url ("/productdetails") }}"><img src="assets/img/a.jpg" alt=""></a>
 				<div class="caption cntr">
 					<p>Manicure & Pedicure</p>
 					<p><strong> $22.00</strong></p>
@@ -361,18 +359,18 @@ New Products
 	Featured Products
 	-->
 		<div class="well well-small">
-		  <h3><a class="btn btn-mini pull-right" href="products.html" title="View more">VIew More<span class="icon-plus"></span></a> Featured Products  </h3>
+		  <h3><a class="btn btn-mini pull-right" href="{{ url ("/products") }}" title="View more">VIew More<span class="icon-plus"></span></a> Featured Products  </h3>
 		  <hr class="soften"/>
 		  <div class="row-fluid">
 		  <ul class="thumbnails">
 			<li class="span4">
 			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details.html"><img src="assets/img/d.jpg" alt=""></a>
+				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a  href="{{ url ("/productdetails") }}"><img src="assets/img/d.jpg" alt=""></a>
 				<div class="caption">
 				  <h5>Manicure & Pedicure</h5>
 				  <h4>
-					  <a class="defaultBtn" href="product_details.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+					  <a class="defaultBtn" href="{{ url ("/productdetails") }}" title="Click to view"><span class="icon-zoom-in"></span></a>
 					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
 					  <span class="pull-right">$22.00</span>
 				  </h4>
@@ -381,12 +379,12 @@ New Products
 			</li>
 			<li class="span4">
 			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details.html"><img src="assets/img/e.jpg" alt=""></a>
+				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a  href="{{ url ("/productdetails") }}"><img src="assets/img/e.jpg" alt=""></a>
 				<div class="caption">
 				  <h5>Manicure & Pedicure</h5>
 				  <h4>
-					  <a class="defaultBtn" href="product_details.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+					  <a class="defaultBtn" href="{{ url ("/productdetails") }}" title="Click to view"><span class="icon-zoom-in"></span></a>
 					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
 					  <span class="pull-right">$22.00</span>
 				  </h4>
@@ -395,12 +393,12 @@ New Products
 			</li>
 			<li class="span4">
 			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details.html"><img src="assets/img/f.jpg" alt=""/></a>
+				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a  href="{{ url ("/productdetails") }}"><img src="assets/img/f.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Manicure & Pedicure</h5>
 				  <h4>
-					  <a class="defaultBtn" href="product_details.html" title="Click to view"><span class="icon-zoom-in"></span></a>
+					  <a class="defaultBtn" href="{{ url ("/productdetails") }}" title="Click to view"><span class="icon-zoom-in"></span></a>
 					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
 					  <span class="pull-right">$22.00</span>
 				  </h4>
@@ -466,7 +464,7 @@ Footer
  </div>
 <div class="span2">
 <h5>Iinformation</h5>
-<a href="contact.html">CONTACT</a><br>
+<a href="{{ url ("/contact") }}">CONTACT</a><br>
 <a href="#">SITEMAP</a><br>
 <a href="#">LEGAL NOTICE</a><br>
 <a href="#">TERMS AND CONDITIONS</a><br>
