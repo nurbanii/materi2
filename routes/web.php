@@ -26,8 +26,8 @@ Route::get('/productdetails', function () {
     return view("productdetails");
 });
 Route::get('/products', function () {
-    return view('products');
+    return view"'products");
 });
 Route::get('register/', function () {
-    return view('register');
+    return view("register");
 });
