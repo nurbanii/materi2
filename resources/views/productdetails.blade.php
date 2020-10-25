@@ -192,234 +192,410 @@ Body Section
 
 	</div>
 	<div class="span9">
-	<div class="well np">
-		<div id="myCarousel" class="carousel slide homCar">
-            <div class="carousel-inner">
-			  <div class="item">
-                <img style="width:100%" src="assets/img/bootstrap_free-ecommerce.png" alt="bootstrap ecommerce templates">
-                <div class="carousel-caption">
-                      <h4>Bootstrap shopping cart</h4>
-                      <p><span>Very clean simple to use</span></p>
+    <ul class="breadcrumb">
+    <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+    <li><a href="products.html">Items</a> <span class="divider">/</span></li>
+    <li class="active">Preview</li>
+    </ul>	
+	<div class="well well-small">
+	<div class="row-fluid">
+			<div class="span5">
+			<div id="myCarousel" class="carousel slide cntr">
+                <div class="carousel-inner">
+                  <div class="item active">
+                   <a href="#"> <img src="assets/img/a.jpg" alt="" style="width:100%"></a>
+                  </div>
+                  <div class="item">
+                     <a href="#"> <img src="assets/img/b.jpg" alt="" style="width:100%"></a>
+                  </div>
+                  <div class="item">
+                    <a href="#"> <img src="assets/img/e.jpg" alt="" style="width:100%"></a>
+                  </div>
                 </div>
-              </div>
-			  <div class="item">
-                <img style="width:100%" src="assets/img/carousel1.png" alt="bootstrap ecommerce templates">
-                <div class="carousel-caption">
-                      <h4>Bootstrap Ecommerce template</h4>
-                      <p><span>Highly Google seo friendly</span></p>
-                </div>
-              </div>
-			  <div class="item active">
-                <img style="width:100%" src="assets/img/carousel3.png" alt="bootstrap ecommerce templates">
-                <div class="carousel-caption">
-                      <h4>Twitter Bootstrap cart</h4>
-                      <p><span>Very easy to integrate and expand.</span></p>
-                </div>
-              </div>
-              <div class="item">
-                <img style="width:100%" src="assets/img/bootstrap-templates.png" alt="bootstrap templates">
-                <div class="carousel-caption">
-                      <h4>Bootstrap templates integration</h4>
-                      <p><span>Compitable to many more opensource cart</span></p>
-                </div>
-              </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
             </div>
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-          </div>
-        </div>
-<!--
-New Products
--->
-	<div class="well well-small">
-	<h3>New Products </h3>
-	<hr class="soften"/>
-		<div class="row-fluid">
-		<div id="newProductCar" class="carousel slide">
-            <div class="carousel-inner">
-			<div class="item active">
-			  <ul class="thumbnails">
-				<li class="span3">
-				<div class="thumbnail">
-					<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a href="#" class="tag"></a>
-					<a href="{{ url ("/productdetails") }}"><img src="assets/img/bootstrap-ring.png" alt="bootstrap-ring"></a>
-				</div>
-				</li>
-				<li class="span3">
-				  <div class="thumbnail">
-					<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a href="#" class="tag"></a>
-					<a  href="{{ url ("/productdetails") }}"><img src="assets/img/i.jpg" alt=""></a>
+			</div>
+			<div class="span7">
+				<h3>Name of the Item [$140.00]</h3>
+				<hr class="soft"/>
+				
+				<form class="form-horizontal qtyFrm">
+				  <div class="control-group">
+					<label class="control-label"><span>$140.00</span></label>
+					<div class="controls">
+					<input type="number" class="span6" placeholder="Qty.">
+					</div>
 				  </div>
-				</li>
-				<li class="span3">
-				  <div class="thumbnail">
-					<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a href="#" class="tag"></a>
-					<a  href="{{ url ("/productdetails") }}"><img src="assets/img/g.jpg" alt=""></a>
+				
+				  <div class="control-group">
+					<label class="control-label"><span>Color</span></label>
+					<div class="controls">
+					  <select class="span11">
+						  <option>Red</option>
+						  <option>Purple</option>
+						  <option>Pink</option>
+						  <option>Red</option>
+						</select>
+					</div>
 				  </div>
-				</li>
-				<li class="span3">
-				  <div class="thumbnail">
-					<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-					<a  href="{{ url ("/productdetails") }}"><img src="assets/img/s.png" alt=""></a>
+				  <div class="control-group">
+					<label class="control-label"><span>Materials</span></label>
+					<div class="controls">
+					  <select class="span11">
+						  <option>Material 1</option>
+						  <option>Material 2</option>
+						  <option>Material 3</option>
+						  <option>Material 4</option>
+						</select>
+					</div>
 				  </div>
-				</li>
-			  </ul>
-			  </div>
-		   <div class="item">
-		  <ul class="thumbnails">
-			<li class="span3">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details.html"><img src="assets/img/i.jpg" alt=""></a>
-			  </div>
-			</li>
-			<li class="span3">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details.html"><img src="assets/img/f.jpg" alt=""></a>
-			  </div>
-			</li>
-			<li class="span3">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details.html"><img src="assets/img/h.jpg" alt=""></a>
-			  </div>
-			</li>
-			<li class="span3">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="{{ url ("/productdetails") }}"><img src="assets/img/j.jpg" alt=""></a>
-			  </div>
-			</li>
-		  </ul>
-		  </div>
-		   </div>
-		  <a class="left carousel-control" href="#newProductCar" data-slide="prev">&lsaquo;</a>
-            <a class="right carousel-control" href="#newProductCar" data-slide="next">&rsaquo;</a>
-		  </div>
-		  </div>
-		<div class="row-fluid">
-		  <ul class="thumbnails">
-			<li class="span4">
-			  <div class="thumbnail">
-				 
-				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a href="{{ url ("/productdetails") }}"><img src="assets/img/b.jpg" alt=""></a>
-				<div class="caption cntr">
-					<p>Manicure & Pedicure</p>
-					<p><strong> $22.00</strong></p>
-					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
-					<div class="actionList">
-						<a class="pull-left" href="#">Add to Wish List </a> 
-						<a class="pull-left" href="#"> Add to Compare </a>
-					</div> 
-					<br class="clr">
-				</div>
-			  </div>
-			</li>
-			<li class="span4">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a href="{{ url ("/productdetails") }}"><img src="assets/img/c.jpg" alt=""></a>
-				<div class="caption cntr">
-					<p>Manicure & Pedicure</p>
-					<p><strong> $22.00</strong></p>
-					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
-					<div class="actionList">
-						<a class="pull-left" href="#">Add to Wish List </a> 
-						<a class="pull-left" href="#"> Add to Compare </a>
-					</div> 
-					<br class="clr">
-				</div>
-			  </div>
-			</li>
-			<li class="span4">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a href="{{ url ("/productdetails") }}"><img src="assets/img/a.jpg" alt=""></a>
-				<div class="caption cntr">
-					<p>Manicure & Pedicure</p>
-					<p><strong> $22.00</strong></p>
-					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
-					<div class="actionList">
-						<a class="pull-left" href="#">Add to Wish List </a> 
-						<a class="pull-left" href="#"> Add to Compare </a>
-					</div> 
-					<br class="clr">
-				</div>
-			  </div>
-			</li>
-		  </ul>
+				  <h4>100 items in stock</h4>
+				  <p>Nowadays the lingerie industry is one of the most successful business spheres.
+				  Nowadays the lingerie industry is one of ...
+				  <p>
+				  <button type="submit" class="shopBtn"><span class=" icon-shopping-cart"></span> Add to cart</button>
+				</form>
+			</div>
+			</div>
+				<hr class="softn clr"/>
+
+
+            <ul id="productDetail" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">Product Details</a></li>
+              <li class=""><a href="#profile" data-toggle="tab">Related Products </a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acceseries <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#cat1" data-toggle="tab">Category one</a></li>
+                  <li><a href="#cat2" data-toggle="tab">Category two</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div id="myTabContent" class="tab-content tabWrapper">
+            <div class="tab-pane fade active in" id="home">
+			  <h4>Product Information</h4>
+                <table class="table table-striped">
+				<tbody>
+				<tr class="techSpecRow"><td class="techSpecTD1">Color:</td><td class="techSpecTD2">Black</td></tr>
+				<tr class="techSpecRow"><td class="techSpecTD1">Style:</td><td class="techSpecTD2">Apparel,Sports</td></tr>
+				<tr class="techSpecRow"><td class="techSpecTD1">Season:</td><td class="techSpecTD2">spring/summer</td></tr>
+				<tr class="techSpecRow"><td class="techSpecTD1">Usage:</td><td class="techSpecTD2">fitness</td></tr>
+				<tr class="techSpecRow"><td class="techSpecTD1">Sport:</td><td class="techSpecTD2">122855031</td></tr>
+				<tr class="techSpecRow"><td class="techSpecTD1">Brand:</td><td class="techSpecTD2">Shock Absorber</td></tr>
+				</tbody>
+				</table>
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+
+			</div>
+			<div class="tab-pane fade" id="profile">
+			<div class="row-fluid">	  
+			<div class="span2">
+				<img src="assets/img/d.jpg" alt="">
+			</div>
+			<div class="span6">
+				<h5>Product Name </h5>
+				<p>
+				Nowadays the lingerie industry is one of the most successful business spheres.
+				We always stay in touch with the latest fashion tendencies - 
+				that is why our goods are so popular..
+				</p>
+			</div>
+			<div class="span4 alignR">
+			<form class="form-horizontal qtyFrm">
+			<h3> $140.00</h3>
+			<label class="checkbox">
+				<input type="checkbox">  Adds product to compair
+			</label><br>
+			<div class="btn-group">
+			  <a href="{{ url ("/productdetails") }}" class="defaultBtn"><span class=" icon-shopping-cart"></span> Add to cart</a>
+			  <a href="{{ url ("/productdetails") }}" class="shopBtn">VIEW</a>
+			 </div>
+				</form>
+			</div>
 		</div>
+			<hr class="soft">
+			<div class="row-fluid">	  
+			<div class="span2">
+				<img src="assets/img/d.jpg" alt="">
+			</div>
+			<div class="span6">
+				<h5>Product Name </h5>
+				<p>
+				Nowadays the lingerie industry is one of the most successful business spheres.
+				We always stay in touch with the latest fashion tendencies - 
+				that is why our goods are so popular..
+				</p>
+			</div>
+			<div class="span4 alignR">
+			<form class="form-horizontal qtyFrm">
+			<h3> $140.00</h3>
+			<label class="checkbox">
+				<input type="checkbox">  Adds product to compair
+			</label><br>
+			<div class="btn-group">
+			  <a href="{{ url ("/productdetails") }}" class="defaultBtn"><span class=" icon-shopping-cart"></span> Add to cart</a>
+			  <a href="{{ url ("/productdetails") }}" class="shopBtn">VIEW</a>
+			 </div>
+				</form>
+			</div>
 	</div>
-	<!--
-	Featured Products
-	-->
-		<div class="well well-small">
-		  <h3><a class="btn btn-mini pull-right" href="{{ url ("/products") }}" title="View more">VIew More<span class="icon-plus"></span></a> Featured Products  </h3>
-		  <hr class="soften"/>
-		  <div class="row-fluid">
-		  <ul class="thumbnails">
-			<li class="span4">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="{{ url ("/productdetails") }}"><img src="assets/img/d.jpg" alt=""></a>
-				<div class="caption">
-				  <h5>Manicure & Pedicure</h5>
-				  <h4>
-					  <a class="defaultBtn" href="{{ url ("/productdetails") }}" title="Click to view"><span class="icon-zoom-in"></span></a>
-					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-					  <span class="pull-right">$22.00</span>
-				  </h4>
-				</div>
+			<hr class="soft"/>
+			<div class="row-fluid">	  
+			<div class="span2">
+				<img src="assets/img/d.jpg" alt="">
+			</div>
+			<div class="span6">
+				<h5>Product Name </h5>
+				<p>
+				Nowadays the lingerie industry is one of the most successful business spheres.
+				We always stay in touch with the latest fashion tendencies - 
+				that is why our goods are so popular..
+				</p>
+			</div>
+			<div class="span4 alignR">
+			<form class="form-horizontal qtyFrm">
+			<h3> $140.00</h3>
+			<label class="checkbox">
+				<input type="checkbox">  Adds product to compair
+			</label><br>
+			<div class="btn-group">
+			  <a href="{{ url ("/productdetails") }}" class="defaultBtn"><span class=" icon-shopping-cart"></span> Add to cart</a>
+			  <a href="{{ url ("/productdetails") }}" class="shopBtn">VIEW</a>
+			 </div>
+				</form>
+			</div>
+	</div>
+			<hr class="soft"/>
+			<div class="row-fluid">	  
+					<div class="span2">
+						<img src="assets/img/d.jpg" alt="">
+					</div>
+					<div class="span6">
+						<h5>Product Name </h5>
+						<p>
+						Nowadays the lingerie industry is one of the most successful business spheres.
+						We always stay in touch with the latest fashion tendencies - 
+						that is why our goods are so popular..
+						</p>
+					</div>
+					<div class="span4 alignR">
+					<form class="form-horizontal qtyFrm">
+					<h3> $140.00</h3>
+					<label class="checkbox">
+						<input type="checkbox">  Adds product to compair
+					</label><br>
+					<div class="btn-group">
+					  <a href="{{ url ("/productdetails") }}" class="defaultBtn"><span class=" icon-shopping-cart"></span> Add to cart</a>
+					  <a href="{{ url ("/productdetails") }}" class="shopBtn">VIEW</a>
+					 </div>
+						</form>
+					</div>
+			</div>
+			<hr class="soften"/>
+			<div class="row-fluid">	  
+					<div class="span2">
+						<img src="assets/img/d.jpg" alt="">
+					</div>
+					<div class="span6">
+						<h5>Product Name </h5>
+						<p>
+						Nowadays the lingerie industry is one of the most successful business spheres.
+						We always stay in touch with the latest fashion tendencies - 
+						that is why our goods are so popular..
+						</p>
+					</div>
+					<div class="span4 alignR">
+					<form class="form-horizontal qtyFrm">
+					<h3> $140.00</h3>
+					<label class="checkbox">
+						<input type="checkbox">  Adds product to compair
+					</label><br>
+					<div class="btn-group">
+					  <a href="{{ url ("/productdetails") }}" class="defaultBtn"><span class=" icon-shopping-cart"></span> Add to cart</a>
+					  <a href="{{ url ("/productdetails") }}" class="shopBtn">VIEW</a>
+					 </div>
+						</form>
+					</div>
+			</div>
+			</div>
+              <div class="tab-pane fade" id="cat1">
+                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+              <br>
+              <br>
+			  <div class="row-fluid">	  
+					<div class="span2">
+						<img src="assets/img/b.jpg" alt="">
+					</div>
+					<div class="span6">
+						<h5>Product Name </h5>
+						<p>
+						Nowadays the lingerie industry is one of the most successful business spheres.
+						We always stay in touch with the latest fashion tendencies - 
+						that is why our goods are so popular..
+						</p>
+					</div>
+					<div class="span4 alignR">
+					<form class="form-horizontal qtyFrm">
+					<h3> $140.00</h3>
+					<label class="checkbox">
+						<input type="checkbox">  Adds product to compair
+					</label><br>
+					<div class="btn-group">
+					  <a href="{{ url ("/productdetails") }}" class="defaultBtn"><span class=" icon-shopping-cart"></span> Add to cart</a>
+					  <a href="{{ url ("/productdetails") }}" class="shopBtn">VIEW</a>
+					 </div>
+						</form>
+					</div>
+			</div>
+			<hr class="soften"/>
+			<div class="row-fluid">	  
+					<div class="span2">
+						<img src="assets/img/a.jpg" alt="">
+					</div>
+					<div class="span6">
+						<h5>Product Name </h5>
+						<p>
+						Nowadays the lingerie industry is one of the most successful business spheres.
+						We always stay in touch with the latest fashion tendencies - 
+						that is why our goods are so popular..
+						</p>
+					</div>
+					<div class="span4 alignR">
+					<form class="form-horizontal qtyFrm">
+					<h3> $140.00</h3>
+					<label class="checkbox">
+						<input type="checkbox">  Adds product to compair
+					</label><br>
+					<div class="btn-group">
+					  <a href="{{ url ("/productdetails") }}" class="defaultBtn"><span class=" icon-shopping-cart"></span> Add to cart</a>
+					  <a href="{{ url ("/productdetails") }}" class="shopBtn">VIEW</a>
+					 </div>
+						</form>
+					</div>
+			</div>
+			<hr class="soften"/>
 			  </div>
-			</li>
-			<li class="span4">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="{{ url ("/productdetails") }}"><img src="assets/img/e.jpg" alt=""></a>
-				<div class="caption">
-				  <h5>Manicure & Pedicure</h5>
-				  <h4>
-					  <a class="defaultBtn" href="{{ url ("/productdetails") }}" title="Click to view"><span class="icon-zoom-in"></span></a>
-					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-					  <span class="pull-right">$22.00</span>
-				  </h4>
+              <div class="tab-pane fade" id="cat2">
+                
+				<div class="row-fluid">	  
+					<div class="span2">
+						<img src="assets/img/d.jpg" alt="">
+					</div>
+					<div class="span6">
+						<h5>Product Name </h5>
+						<p>
+						Nowadays the lingerie industry is one of the most successful business spheres.
+						We always stay in touch with the latest fashion tendencies - 
+						that is why our goods are so popular..
+						</p>
+					</div>
+					<div class="span4 alignR">
+					<form class="form-horizontal qtyFrm">
+					<h3> $140.00</h3>
+					<label class="checkbox">
+						<input type="checkbox">  Adds product to compair
+					</label><br>
+					<div class="btn-group">
+					  <a href="{{ url ("/productdetails") }}" class="defaultBtn"><span class=" icon-shopping-cart"></span> Add to cart</a>
+					  <a href="{{ url ("/productdetails") }}" class="shopBtn">VIEW</a>
+					 </div>
+						</form>
+					</div>
+			</div>
+			<hr class="soften"/>
+			<div class="row-fluid">	  
+					<div class="span2">
+						<img src="assets/img/d.jpg" alt="">
+					</div>
+					<div class="span6">
+						<h5>Product Name </h5>
+						<p>
+						Nowadays the lingerie industry is one of the most successful business spheres.
+						We always stay in touch with the latest fashion tendencies - 
+						that is why our goods are so popular..
+						</p>
+					</div>
+					<div class="span4 alignR">
+					<form class="form-horizontal qtyFrm">
+					<h3> $140.00</h3>
+					<label class="checkbox">
+						<input type="checkbox">  Adds product to compair
+					</label><br>
+					<div class="btn-group">
+					  <a href="{{ url ("/productdetails") }}" class="defaultBtn"><span class=" icon-shopping-cart"></span> Add to cart</a>
+					  <a href="{{ url ("/productdetails") }}"class="shopBtn">VIEW</a>
+					 </div>
+						</form>
+					</div>
+			</div>
+			<hr class="soften"/>
+			<div class="row-fluid">	  
+					<div class="span2">
+						<img src="assets/img/d.jpg" alt="">
+					</div>
+					<div class="span6">
+						<h5>Product Name </h5>
+						<p>
+						Nowadays the lingerie industry is one of the most successful business spheres.
+						We always stay in touch with the latest fashion tendencies - 
+						that is why our goods are so popular..
+						</p>
+					</div>
+					<div class="span4 alignR">
+					<form class="form-horizontal qtyFrm">
+					<h3> $140.00</h3>
+					<label class="checkbox">
+						<input type="checkbox">  Adds product to compair
+					</label><br>
+					<div class="btn-group">
+					  <a href="{{ url ("/productdetails") }}" class="defaultBtn"><span class=" icon-shopping-cart"></span> Add to cart</a>
+					  <a href="{{ url ("/productdetails") }}" class="shopBtn">VIEW</a>
+					 </div>
+						</form>
+					</div>
+			</div>
+			<hr class="soften"/>
+			<div class="row-fluid">	  
+					<div class="span2">
+						<img src="assets/img/d.jpg" alt="">
+					</div>
+					<div class="span6">
+						<h5>Product Name </h5>
+						<p>
+						Nowadays the lingerie industry is one of the most successful business spheres.
+						We always stay in touch with the latest fashion tendencies - 
+						that is why our goods are so popular..
+						</p>
+					</div>
+					<div class="span4 alignR">
+					<form class="form-horizontal qtyFrm">
+					<h3> $140.00</h3>
+					<label class="checkbox">
+						<input type="checkbox">  Adds product to compair
+					</label><br>
+					<div class="btn-group">
+					  <a href="{{ url ("/productdetails") }}" class="defaultBtn"><span class=" icon-shopping-cart"></span> Add to cart</a>
+					  <a href="{{ url ("/productdetails") }}" class="shopBtn">VIEW</a>
+					 </div>
+						</form>
+					</div>
+			</div>
+			<hr class="soften"/>
+			
 				</div>
-			  </div>
-			</li>
-			<li class="span4">
-			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details.html"><img src="assets/img/f.jpg" alt=""/></a>
-				<div class="caption">
-				  <h5>Manicure & Pedicure</h5>
-				  <h4>
-					  <a class="defaultBtn" href="{{ url ("/productdetails") }}" title="Click to view"><span class="icon-zoom-in"></span></a>
-					  <a class="shopBtn" href="#" title="add to cart"><span class="icon-plus"></span></a>
-					  <span class="pull-right">$22.00</span>
-				  </h4>
-				</div>
-			  </div>
-			</li>
-		  </ul>	
-	</div>
-	</div>
-	
-	<div class="well well-small">
-	<a class="btn btn-mini pull-right" href="#">View more <span class="icon-plus"></span></a>
-	Popular Products 
-	</div>
-	<hr>
-	<div class="well well-small">
-	<a class="btn btn-mini pull-right" href="#">View more <span class="icon-plus"></span></a>
-	Best selling Products 
-	</div>
-	</div>
-	</div>
+            </div>
+
+</div>
+</div>
+</div> <!-- Body wrapper -->
 <!-- 
 Clients 
 -->
@@ -464,7 +640,7 @@ Footer
  </div>
 <div class="span2">
 <h5>Iinformation</h5>
-<a href="{{ url ("/contact") }}">CONTACT</a><br>
+<a href="contact.html">CONTACT</a><br>
 <a href="#">SITEMAP</a><br>
 <a href="#">LEGAL NOTICE</a><br>
 <a href="#">TERMS AND CONDITIONS</a><br>

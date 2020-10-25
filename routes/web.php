@@ -22,11 +22,11 @@ Route::get('/index', function () {
 Route::get('/login', function () {
     return view("login");
 });
-Route::get('/productdetails', function () {
-    return view("productdetails");
-});
 Route::get('/products', function () {
     return view("products");
+});
+Route::get('/productdetails', function () {
+    return view("productdetails");
 });
 Route::get('/register', function () {
     return view("register");

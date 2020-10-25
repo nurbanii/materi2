@@ -56,7 +56,7 @@ Lower Header Section
 <div class="row">
 	<div class="span4">
 	<h1>
-	<a class="logo" href="index.html"><span>Twitter Bootstrap ecommerce template</span> 
+	<a class="logo" href="{{ url ("/index") }}"><span>Twitter Bootstrap ecommerce template</span> 
 		<img src="assets/img/logo-bootstrap-shoping-cart.png" alt="bootstrap sexy shop">
 	</a>
 	</h1>
@@ -279,7 +279,7 @@ New Products
 			<li class="span3">
 			  <div class="thumbnail">
 				<a class="zoomTool" href="{{ url ("/productdetails") }}" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
-				<a  href="product_details.html"><img src="assets/img/f.jpg" alt=""></a>
+				<a  href="{{ url ("/productdetails") }}"><img src="assets/img/f.jpg" alt=""></a>
 			  </div>
 			</li>
 			<li class="span3">
