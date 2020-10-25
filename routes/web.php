@@ -31,3 +31,6 @@ Route::get('/products', function () {
 Route::get('register/', function () {
     return view("register");
 });
+Route::get('base/', function () {
+    return view("admin.base");
+});
