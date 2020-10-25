@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Shoppy an Admin Panel Category Flat Bootstrap Responsive Website Template | Blank :: w3layouts</title>
+<title>Shoppy an Admin Panel Category Flat Bootstrap Responsive Website Template | Signup :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -19,72 +19,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--js-->
 <script src="js/jquery-2.1.1.min.js"></script> 
 <!--icons-css-->
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="css/font-awesome.css" rel="stylesheet">
 <!--Google Fonts-->
 <link href='//fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'>
-<!--//skycons-icons-->
+<!--//charts-->
 </head>
 <body>	
-<div class="page-container">	
-   <div class="left-content">
-	   <div class="mother-grid-inner">
-            <!--header start here-->
-@include('admin.section.header')
-<!--heder end here-->
-<!-- script-for sticky-nav -->
-		<script>
-		$(document).ready(function() {
-			 var navoffeset=$(".header-main").offset().top;
-			 $(window).scroll(function(){
-				var scrollpos=$(window).scrollTop(); 
-				if(scrollpos >=navoffeset){
-					$(".header-main").addClass("fixed");
-				}else{
-					$(".header-main").removeClass("fixed");
-				}
-			 });
-			 
-		});
-		</script>
-		<!-- /script-for sticky-nav -->
 <!--inner block start here-->
-<div class="inner-block">
-    <div class="blank">
-    	
-    	@yield('content')
+<div class="signup-page-main">
+     <div class="signup-main">  	
+    	 <div class="signup-head">
+				<h1>Sign Up</h1>
+			</div>
+			<div class="signup-block">
+				<form>
+					<input type="text" name="email" placeholder="Name" required="">
+					<input type="text" name="email" placeholder="Email" required="">
+					<input type="password" name="password" class="lock" placeholder="Password">
+					<div class="forgot-top-grids">
+						<div class="forgot-grid">
+							<ul>
+								<li>
+									<input type="checkbox" id="brand1" value="">
+									<label for="brand1"><span></span>I agree to the terms</label>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="clearfix"> </div>
+					</div>
+					<input type="submit" name="Sign In" value="Sign up">														
+				</form>
+				<div class="sign-down">
+				<h4>Already have an account? <a href="login.html"> Login here.</a></h4>
+				  <h5><a href="index.html">Go Back to Home</a></h5>
+				</div>
+			</div>
     </div>
 </div>
 <!--inner block end here-->
 <!--copy rights start here-->
-@include('admin.section.footer')	
+<div class="copyrights">
+	 <p>© 2016 Shoppy. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+</div>	
 <!--COPY rights end here-->
-</div>
-</div>
-<!--slider menu-->
-   @include('admin.section.sidebar')
-	<div class="clearfix"> </div>
-</div>
-<!--slide bar menu end here-->
-<script>
-var toggle = true;
-            
-$(".sidebar-icon").click(function() {                
-  if (toggle)
-  {
-    $(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
-    $("#menu span").css({"position":"absolute"});
-  }
-  else
-  {
-    $(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
-    setTimeout(function() {
-      $("#menu span").css({"position":"relative"});
-    }, 400);
-  }               
-                toggle = !toggle;
-            });
-</script>
 <!--scrolling js-->
 		<script src="js/jquery.nicescroll.js"></script>
 		<script src="js/scripts.js"></script>
@@ -93,3 +72,7 @@ $(".sidebar-icon").click(function() {
 <!-- mother grid end here-->
 </body>
 </html>
+
+
+                      
+						

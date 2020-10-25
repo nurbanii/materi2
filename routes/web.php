@@ -28,9 +28,24 @@ Route::get('/productdetails', function () {
 Route::get('/products', function () {
     return view("products");
 });
-Route::get('register/', function () {
+Route::get('/register', function () {
     return view("register");
 });
-Route::get('base/', function () {
+Route::get('/base', function () {
     return view("admin.base");
+});
+Route::get('/beranda', function () {
+    return view("admin.beranda");
+});
+Route::get('/kategori', function () {
+    return view("admin.kategori");
+});
+Route::get('/produk', function () {
+    return view("admin.produk");
+});
+Route::get('/login', function () {
+    return view("admin.login");
+});
+Route::get('/register', function () {
+    return view("admin.register");
 });
