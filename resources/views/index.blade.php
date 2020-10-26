@@ -37,11 +37,7 @@
 					<a href="#"><span class="icon-youtube"></span></a>
 					<a href="#"><span class="icon-tumblr"></span></a>
 				</div>
-				<a class="active" href="{{ url ("/index") }}"> <span class="icon-home"></span> Home</a> 
-				<a href="#"><span class="icon-user"></span> My Account</a> 
-				<a href="{{ url ("/register") }}"><span class="icon-edit"></span> Free Register </a> 
-				<a href="{{ url ("/contact") }}"><span class="icon-envelope"></span> Contact us</a>
-				<a href="{{ url ("/cart") }}"><span class="icon-shopping-cart"></span> 2 Item(s) - <span class="badge badge-warning"> $448.42</span></a>
+
 			</div>
 		</div>
 	</div>
@@ -65,7 +61,7 @@ Lower Header Section
 	<div class="offerNoteWrapper">
 	<h1 class="dotmark">
 	<i class="icon-cut"></i>
-	Twitter Bootstrap shopping cart HTML template is available @ $14
+	Twitter Bootstrap shopping cart 
 	</h1>
 	</div>
 	</div>
