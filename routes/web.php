@@ -43,9 +43,9 @@ Route::get('/kategori', function () {
 Route::get('/produk', function () {
     return view("admin.produk");
 });
-Route::get('/login', function () {
-    return view("admin.login");
+Route::get('/loginn', function () {
+    return view("admin.loginn");
 });
-Route::get('/register', function () {
-    return view("admin.register");
+Route::get('/registerr', function () {
+    return view("admin.registerr");
 });

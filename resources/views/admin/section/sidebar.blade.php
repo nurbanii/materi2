@@ -11,8 +11,8 @@
 		            </li>
 		          </ul>
 		        </li>
-		          <li><a href="{{url('login')}}"><i class="fa fa-user"></i><span>Login</a></li>
-		          <li><a href="{{url('register')}}"><i class="fa fa-file-text"></i><span>Register</a></li>
+		          <li><a href="{{url('loginn')}}"><i class="fa fa-user"></i><span>Login</a></li>
+		          <li><a href="{{url('registerr')}}"><i class="fa fa-file-text"></i><span>Register</a></li>
 		      </ul>
 		    </div>
 	 </div>
