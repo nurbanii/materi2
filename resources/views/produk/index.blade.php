@@ -4,40 +4,9 @@
 <div class="chit-chat-layer1">
 	<div class="col-md-12 chit-chat-layer1-left">
 		<div class="work-progres">
-			<form>
-				<div class="row">
-				<div class="col-md-12">
-					<label>Nama</label>
-					<input type="" name="" class="form-control">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<label>Stok</label>
-					<input type="" name="" class="form-control">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<label>Harga Min</label>
-					<input type="" name="" class="form-control">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<label>Harga Max</label>
-					<input type="" name="" class="form-control">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 mt-3">
-					<br>
-					<button class="btn btn-primary"><i class="fa fa-search"></i>Search</button>
-				</div>
-			</div>
-			</form>
+
 <div class="clear-fix"></div>
-			<table class="table">
+			<table class="table" id="dataTable">
 						<thead>
 							<tr>
 								<td colspan="3">

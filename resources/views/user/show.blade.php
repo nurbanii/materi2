@@ -1,3 +1,4 @@
+
 @extends('admin.base')
 
 @section('content')
@@ -9,6 +10,9 @@
 			<p>
 				{{"@".$user->username}} |
 				Email : {{$user->email}} |
+			</p>
+			<p>
+				No Handphone : {{$user->no_handphone}} |
 			</p>
 		</div>
 	</div>

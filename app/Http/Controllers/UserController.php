@@ -20,6 +20,7 @@ class UserController extends Controller{
 		$user->password = bcrypt(request ('password'));
 		$user->save();
 
+
 		$userDetail =new UserDetail;
 		$userDetail->id_user =$user->id;
 		$userDetail->no_handphone = request ('no_handphone');

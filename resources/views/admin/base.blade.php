@@ -19,6 +19,7 @@
   <link href='//fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'>
   <!--//skycons-icons-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
 </head>
 <body>  
   <div class="page-container">  
@@ -273,4 +274,11 @@ $(".sidebar-icon").click(function() {
     <script src="{{asset('js/scripts.js')}}"></script>
     <!--//scrolling js-->
 <script src="{{asset('js/bootstrap.js')}}"> </script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+
+<script>
+  $(document).ready( function () {
+    $('#dataTable').DataTable();
+} );
+</script>
 </html>                     
