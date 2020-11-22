@@ -21,13 +21,14 @@ class UserController extends Controller{
 		$user->save();
 
 
-		$userDetail =new UserDetail;
-		$userDetail->id_user =$user->id;
-		$userDetail->no_handphone = request ('no_handphone');
+		$userDetail = new UserDetail;
+		$userDetail->id_user = $user->id;
+		$userDetail->no_handphone = request('no_handphone');
 		$userDetail->save();
 
 			
 			return redirect('user')->with('success','Data Berhasil Ditambahkan');
+		// dd(request()->all());
 		
 	}
 	function show(User $user){

@@ -12,11 +12,10 @@
 				Email : {{$user->email}} |
 			</p>
 			<p>
-				No Handphone : {{$user->no_handphone}} |
+				 No Handphone : {{$user->detail->no_handphone}}
 			</p>
 		</div>
 	</div>
-
 	<div class="clearfix"> </div>
 </div>
 
