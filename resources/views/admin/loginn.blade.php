@@ -1,4 +1,4 @@
-<!--Author: W3layouts
+						<!--Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Shoppy an Admin Panel Category Flat Bootstrap Responsive Website Template | Login :: w3layouts</title>
+<title>Shoppy Nurbani|Login</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -32,9 +32,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h1>Login</h1>
 			</div>
 			<div class="login-block">
-				<form>
-					<input type="text" name="email" placeholder="Email" required="">
-					<input type="password" name="password" class="lock" placeholder="Password">
+				@include('admin.utils.notif')
+				<form action="{{url('loginn')}}" method="post">
+					@csrf
+					<div class="row">
+					<div class="form-group col-md mb-4">
+					<input type="text" name="email" placeholder="Email" required="" name="email">
+					</div>
+					<input type="password" name="password" class="lock" placeholder="password" > 
+					</div>
 					<div class="forgot-top-grids">
 						<div class="forgot-grid">
 							<ul>
@@ -49,7 +55,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="clearfix"> </div>
 					</div>
-					<input type="submit" name="Sign In" value="Loginn">	
+					<input type="submit" name="Sign In" value="Login">	
 					<h3>Not a member?<a href="signup.html"> Sign up now</a></h3>				
 
 				</form>
@@ -60,7 +66,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--inner block end here-->
 <!--copy rights start here-->
 <div class="copyrights">
-	 <p>© 2016 Shoppy. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+	 <p>© 2020 Shoppy| Design by: Nurbani  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 </div>	
 <!--COPY rights end here-->
 

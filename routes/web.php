@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,36 +19,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/index', function () {
-    return view("index");
-});
-Route::get('/login', function () {
-    return view("login");
-});
-Route::get('/products', function () {
-    return view("products");
-});
-Route::get('/productdetails', function () {
-    return view("productdetails");
-});
-Route::get('/register', function () {
-    return view("register");
-});
-Route::get('/base', function () {
-    return view("admin.base");
-});
-Route::get('/beranda', function () {
-    return view("admin.beranda");
-});
-Route::get('/kategori', function () {
-    return view("admin.kategori");
-});
-Route::get('/produk', function () {
-    return view("admin.produk");
-});
-Route::get('/loginn', function () {
-    return view("admin.loginn");
-});
-Route::get('/registerr', function () {
-    return view("admin.registerr");
-});
+
+Route::get('beranda', [HomeController::class, 'showBeranda']);
+Route::get('kategori', [HomeController::class, 'showKategori']);
+Route::get('loginn', [AuthController::class, 'showLoginn']);
+
+Route::post('produk/filter', [ProdukController::class, 'filter']);
+
+Route::resource('produk', ProdukController::class);
+Route::resource('user', UserController::class);
+
+
+Route::get('loginn', [AuthController::class, 'showLoginn'])->name('loginn');
+Route::post('loginn', [AuthController::class, 'LoginnProcess']);
+Route::get('logout', [AuthController::class, 'logout']);
+

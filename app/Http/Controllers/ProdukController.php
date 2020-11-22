@@ -48,3 +48,27 @@ class ProdukController extends Controller{
 
 	}
 }
+
+	function filter(){
+		$nama = request ('nama');
+		$stok = explode(",", request('stok'));
+		$data['harga_min'] = $harga_min = request('harga_min');
+		$data['harga_max'] = $harga_max = request('harga_max');
+
+		//$data['DataProduk'] = produk::where('nama', 'like', "%$nama%")->get();
+		//$data['DataProduk'] = Produk::whereIn('stok',  $stok)->get();
+		//$data['DataProduk'] = Produk::whereBetween('harga', [$harga_min,$harga_max])->get();
+		//$data['DataProduk'] = produk::where('stok', <>, $stok)->get();
+		//$data['DataProduk'] = Produk::whereNotIn('stok',  $stok)->get();
+		//$data['DataProduk'] = Produk::whereBetween('harga', [$harga_min,$harga_max])->get();
+        //$data['DataProduk'] = Produk::whereNotNull('stok')->get();
+		//$data['DataProduk'] = Produk::whereDate('create_at', ['2020-01-20', '2020-01-19'])->get();
+		$data['DataProduk'] = Produk::whereBetween('harga', [$harga_min,$harga_max])->whereNotIn('stok', [750])->WhereYear('create_at', '2019')->get();
+
+
+		$data['nama'] = $nama;
+		$stok['stok'] = request('stok');
+
+
+		return view('produk.index', $data);
+	}
